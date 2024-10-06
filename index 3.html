@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to E-Shikshak, your go-to platform for learning programming languages.">
+    <meta name="keywords" content="E-Shikshak, Programming, Coding, Learn to Code, Courses">
+    <meta name="author" content="E-Shikshak">
+    <title>Welcome to E-Shikshak</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            color: #444;
+            overflow: hidden;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Heading Styling */
+        .container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #f2709c, #ff9472);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Paragraph Styling */
+        .container p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Button Styling */
+        .container a {
+            text-decoration: none;
+            background: linear-gradient(135deg, #42e695, #3bb2b8);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 10px 0;
+        }
+
+        .container a:hover {
+            background: linear-gradient(135deg, #3bb2b8, #42e695);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Floating Circles Background */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.3; /* Reduced opacity */
+        }
+
+        .circle.one {
+            width: 150px; /* Reduced size */
+            height: 150px;
+            top: 5%; /* Adjusted position */
+            left: 10%; /* Adjusted position */
+            animation-duration: 8s;
+        }
+
+        .circle.two {
+            width: 200px; /* Reduced size */
+            height: 200px;
+            bottom: 10%; /* Adjusted position */
+            right: 15%; /* Adjusted position */
+            animation-duration: 7s;
+        }
+
+        .circle.three {
+            width: 100px; /* Reduced size */
+            height: 100px;
+            top: 60%; /* Adjusted position */
+            left: 70%; /* Adjusted position */
+            animation-duration: 9s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container h1 {
+                font-size: 2rem;
+            }
+
+            .container p {
+                font-size: 1rem;
+            }
+
+            .container a {
+                padding: 10px 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Circles -->
+    <div class="circle one"></div>
+    <div class="circle two"></div>
+    <div class="circle three"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1>Welcome to E-Shikshak</h1>
+        <p>Learn coding, explore new skills, and build your future with E-Shikshak. We offer a variety of programming courses for all levels. Join us and start your journey in the world of technology today!</p>
+        
+        <!-- Navigation Links -->
+        <a href="courses.html">Explore Courses</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="help.html">Help</a>
+        <a href="quiz.html">Take a Quiz</a>
+    </div>
+          
+
+</body></html>
